@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imageid"
+            android:contentDescription="@string/image_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/colorFont"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/movieNameRate"
+                android:layout_gravity="center_vertical"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_weight="1" />
+
+            <ToggleButton
+                android:id="@+id/favourites_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textOn=""
+                android:textOff=""
+                android:visibility="invisible"
+                android:background="@drawable/toggle_selector"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorFont"
+            android:id="@+id/movieText" />
+
+        <LinearLayout
+            android:id="@+id/trailer_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="start" />
+
+        <LinearLayout
+            android:id="@+id/review_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</ScrollView>
